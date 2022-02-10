@@ -1,0 +1,154 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-image: url(../images/headerImage960x240-assets/header-small.jpg);
+    height: 140px;
+}
+
+header {
+    padding: .5rem 2%;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+
+
+div#navWrapper {
+    background-color: darken($menuColor, 10%);
+}
+
+nav {
+    button {
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        padding: .5rem
+    } // end button
+} // end nav 
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.open {
+    display: block;
+} //end of open tag
+
+
+nav ul li {
+    border-bottom: solid 1px white;
+}
+nav ul li a {
+    display: block;
+    background-color: darken($color: lightskyblue, $amount: 3%);
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0 1rem .4rem;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: left;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+
+    $cbr: 10px;
+
+    .card-deck {
+    
+        display: flex;
+        flex-wrap: wrap;
+
+    } //this closing braket is for .card-deck
+
+    .card {
+        flex-basis: 100%;
+        border: 1px solid #999;
+        border-radius: $cbr;
+        border-top-left-radius: $cbr - 1;
+        border-top-right-radius: $cbr - 1;
+        margin: 1rem .4%;
+        padding: 1rem;
+        text-align: center;
+        
+    section {
+        background-color: #eee;
+        color: #444;
+    } //end of section
+
+    img {
+        padding: 1rem;
+        position: relative;
+        animation: mymoves 5s 1;
+    }
+    p {
+        padding: 1rem;
+    }
+
+    a {
+        display: block;
+        background-color: lightskyblue;
+        color: white;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        border-radius: $cbr;
+    }
+
+    a:hover {
+        background-color: lighten(lightskyblue, 10%);
+    }
+
+    } // This closing braket is for .card
+
+    @keyframes mymoves {
+        0% {right: 1000px}
+        100% {right: 0px}
+    }
+} //this closing braket is for the main
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -16,6 +16,7 @@ body {
 div#headerWrapper {
     background-image: url(../images/headerImage960x240-assets/header-small.jpg);
     height: 140px;
+    color: darken(#006362, 5);
 }
 
 header {
@@ -58,7 +59,7 @@ nav ul li {
 nav ul li a {
     display: block;
     background-color: darken($color: lightskyblue, $amount: 3%);
-    color: #eee;
+    color: black;
     border-left: 1px solid #777;
     padding: .5rem 0 1rem .4rem;
     text-decoration: none;
@@ -117,7 +118,7 @@ main {
     a {
         display: block;
         background-color: lightskyblue;
-        color: white;
+        color: black;
         padding: 1rem 0;
         margin: 1rem 0;
         border-radius: $cbr;

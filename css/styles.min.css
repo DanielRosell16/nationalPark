@@ -36,7 +36,7 @@ template{display:none}
 html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 body{font-size:16px;font-family:Verdana,sans-serif}
-div#headerWrapper{background-image:url(../images/headerImage960x240-assets/header-small.jpg);height:140px;color:#004a49}
+div#headerWrapper{background-image:url(../images/headerImage960x240-assets/header-assets/header-small.jpg);height:140px;color:#fff}
 header{padding:.5rem 2%}
 header h1{margin:0}
 header h2{margin:0;font-weight:400}
@@ -64,7 +64,7 @@ main .card a:hover{background-color:#b8e2fc}
 footer{background-color:#ddd;padding:.5rem 2%;text-align:center}
 .clearfix:after{content:"";display:table;clear:both}
 @media only screen and (min-width:35rem){
-div#headerWrapper{background-image:url(../images/headerImage960x240-assets/header-medium.jpg);height:240px}
+div#headerWrapper{background-image:url(../images/headerImage960x240-assets/header-assets/header-medium.jpg);height:240px}
 nav ul li{width:auto}
 nav ul li:first-child a{border-left:1px solid #777}
 nav ul li:last-child a{border-right:1px solid #777}
@@ -73,7 +73,7 @@ main .card{flex-basis:48%}
 }
 @media only screen and (min-width:60rem){
 footer,header,main,nav{max-width:64rem;margin:auto}
-div#headerWrapper{background-image:url(../images/headerImage960x240-assets/header-large.jpg);height:200px;background-size:cover;background-position:center bottom;color:#87cefa}
+div#headerWrapper{background-image:url(../images/headerImage960x240-assets/header-assets/header-large.jpg);height:200px;background-size:cover;background-position:center bottom;color:#fff}
 nav button{display:none}
 nav ul{margin-right:6.5vw;border:none;display:flex;justify-content:end}
 nav ul li{border:none}
